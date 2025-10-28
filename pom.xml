@@ -30,7 +30,6 @@
 
   <modules>
     <module>util</module>
-
     <module>converter.file</module>
     <module>converter.bundle</module>
     <module>diagnostics</module>
@@ -45,6 +44,7 @@
     <module>mxbeans</module>
     <module>help</module>
     <module>system.runtime</module>
+<!--    <module>all</module>-->
   </modules>
 
   <!-- can be removed when parent is deployed ad non snapshot.-->

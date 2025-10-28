@@ -15,5 +15,6 @@
 	org.eclipse.osgi-technology.console.plain;version='[0.0.1,0.0.2)',\
 	junit-platform-engine;version='[1.11.1,1.11.2)',\
 	org.eclipse.osgi-technology.command.osgi.framework.modify;version='[0.0.1,0.0.2)',\
-	org.eclipse.osgi-technology.command.osgi.framework.modify-tests;version='[0.0.1,0.0.2)'
+	org.eclipse.osgi-technology.command.osgi.framework.modify-tests;version='[0.0.1,0.0.2)',\
+	org.eclipse.osgi-technology.command.osgi.framework;version='[0.0.1,0.0.2)'
 -runee: JavaSE-17

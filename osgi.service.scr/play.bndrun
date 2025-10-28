@@ -3,7 +3,8 @@
 	bnd.identity;id='org.eclipse.osgi-technology.command.${project.artifactId}-tests',\
 	bnd.identity;id='org.eclipse.osgi-technology.command.${project.artifactId}',\
 	bnd.identity;id='org.eclipse.osgi-technology.console.plain',\
-	bnd.identity;id=junit-platform-engine
+	bnd.identity;id=junit-platform-engine,\
+	bnd.identity;id='org.apache.felix.scr'
 
 -runfw: org.apache.felix.framework
 -runbundles: \
@@ -15,5 +16,9 @@
 	org.eclipse.osgi-technology.console.plain;version='[0.0.1,0.0.2)',\
 	junit-platform-engine;version='[1.11.1,1.11.2)',\
 	org.eclipse.osgi-technology.command.osgi.service.scr;version='[0.0.1,0.0.2)',\
-	org.eclipse.osgi-technology.command.osgi.service.scr-tests;version='[0.0.1,0.0.2)'
+	org.eclipse.osgi-technology.command.osgi.service.scr-tests;version='[0.0.1,0.0.2)',\
+	org.apache.felix.scr;version='[2.2.2,2.2.3)',\
+	org.osgi.service.component;version='[1.5.1,1.5.2)',\
+	org.osgi.util.function;version='[1.0.0,1.0.1)',\
+	org.osgi.util.promise;version='[1.0.0,1.0.1)'
 -runee: JavaSE-17

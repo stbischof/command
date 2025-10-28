@@ -11,7 +11,7 @@
  * Contributors:
  *     Stefan Bischof - initial
  */
-package org.eclipse.osgi.technology.command.osgi.framework;
+package org.eclipse.osgi.technology.command.osgi.framework.modify;
 
 import java.io.File;
 import java.io.IOException;

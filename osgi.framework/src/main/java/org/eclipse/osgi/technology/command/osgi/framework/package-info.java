@@ -11,12 +11,5 @@
  * Contributors:
  *     Stefan Bischof - initial
  */
+@org.osgi.annotation.bundle.Export
 package org.eclipse.osgi.technology.command.osgi.framework;
-
-public class Test {
-
-    @org.junit.jupiter.api.Test
-    void testName() throws Exception {
-        
-    }
-}

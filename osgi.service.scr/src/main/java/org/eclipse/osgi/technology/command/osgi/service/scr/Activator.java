@@ -29,12 +29,12 @@ public class Activator extends AbstractActivator {
     @Override
     protected void init() {
         registerCommandService(new ScrCommands(context, formatter), "tech", Map.of());
-        registerConverterService(new HttpWhiteboardConverter(formatter));
+        registerConverterService(new ScrConverter(formatter));
     }
 
-    private static class HttpWhiteboardConverter extends BaseDTOFormatterConverter {
+    private static class ScrConverter extends BaseDTOFormatterConverter {
 
-        public HttpWhiteboardConverter(DTOFormatter formatter) {
+        public ScrConverter(DTOFormatter formatter) {
             super(formatter);
         }
     }

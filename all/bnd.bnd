@@ -1,0 +1,27 @@
+#-conditionalpackage: org.eclipse.osgi.technology.command.*
+
+Bundle-Activator: org.eclipse.osgi.technology.command.all.Activator
+
+-includeresource: \
+	converter.bundle-0.0.1-SNAPSHOT.jar;lib:=true,\
+	converter.file-0.0.1-SNAPSHOT.jar;lib:=true,\
+	diagnostics-0.0.1-SNAPSHOT.jar;lib:=true,\
+	fs.navigate-0.0.1-SNAPSHOT.jar;lib:=true,\
+	help-0.0.1-SNAPSHOT.jar;lib:=true,\
+	mxbeans-0.0.1-SNAPSHOT.jar;lib:=true,\
+	osgi.framework-0.0.1-SNAPSHOT.jar;lib:=true,\
+	osgi.framework.modify-0.0.1-SNAPSHOT.jar;lib:=true,\
+	osgi.service.jakartars-0.0.1-SNAPSHOT.jar;lib:=true,\
+	osgi.service.scr-0.0.1-SNAPSHOT.jar;lib:=true,\
+	osgi.service.servlet-0.0.1-SNAPSHOT.jar;lib:=true,\
+	system.runtime-0.0.1-SNAPSHOT.jar;lib:=true
+
+
+Import-Package: \
+  org.osgi.service.jakartars.runtime;'resolution:'=optional,\
+  org.osgi.service.jakartars.runtime.dto;'resolution:'=optional,\
+  org.osgi.service.component.runtime;'resolution:'=optional,\
+  org.osgi.service.component.runtime.dto;'resolution:'=optional,\
+  org.osgi.service.servlet.runtime;'resolution:'=optional,\
+  org.osgi.service.servlet.runtime.dto;'resolution:'=optional,\
+  *
