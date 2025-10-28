@@ -19,11 +19,15 @@ import org.osgi.annotation.bundle.Header;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.Constants;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @Header(name = Constants.BUNDLE_ACTIVATOR, value = "${@class}")
 @org.osgi.annotation.bundle.Capability(namespace = "org.apache.felix.gogo", name = "command.implementation", version = "1.0.0")
 @org.osgi.annotation.bundle.Requirement(effective = "active", namespace = "org.apache.felix.gogo", name = "runtime.implementation", version = "1.0.0")
 public class Activator implements BundleActivator {
+
+	private static final Logger logger = LoggerFactory.getLogger(Activator.class);
 
 	private List<BundleActivator> activators = List.of(
 			new org.eclipse.osgi.technology.command.converter.bundle.Activator(),
@@ -47,7 +51,7 @@ public class Activator implements BundleActivator {
 			try {
 				a.start(context);
 			} catch (Exception e) {
-				e.printStackTrace();
+				logger.error("Failed to start activator: {}", a.getClass().getName(), e);
 			}
 
 		});
@@ -60,7 +64,7 @@ public class Activator implements BundleActivator {
 			try {
 				a.stop(context);
 			} catch (Exception e) {
-				e.printStackTrace();
+				logger.error("Failed to stop activator: {}", a.getClass().getName(), e);
 			}
 
 		});

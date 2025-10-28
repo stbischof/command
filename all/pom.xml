@@ -34,6 +34,11 @@
 	</pluginRepositories>
 
 	<dependencies>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.eclipse.osgi-technology.command</groupId>
 			<artifactId>converter.bundle</artifactId>
